@@ -5,7 +5,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'app/**'  # Only run when app code changes
+      - 'app/**'  
 
 env:
   AWS_REGION: us-east-1
