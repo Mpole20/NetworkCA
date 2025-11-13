@@ -1,4 +1,4 @@
-# Create Application Load Balancer
+# create Application Load Balancer
 resource "aws_lb" "main" {
   name               = "${var.app_name}-alb"
   internal           = false
@@ -13,7 +13,7 @@ resource "aws_lb" "main" {
   }
 }
 
-# Create Target Group for ECS tasks
+# create the Target Group for ECS tasks
 resource "aws_lb_target_group" "app" {
   name        = "${var.app_name}-tg"
   port        = 80
@@ -36,7 +36,7 @@ resource "aws_lb_target_group" "app" {
   }
 }
 
-# Create ALB Listener
+# Create the ALB Listener
 resource "aws_lb_listener" "app" {
   load_balancer_arn = aws_lb.main.arn
   port              = 80

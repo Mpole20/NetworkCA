@@ -1,4 +1,4 @@
-# Create ECR Repository for Docker images
+# make ECR Repository for Docker images
 resource "aws_ecr_repository" "app" {
   name = var.app_name
 
@@ -11,7 +11,7 @@ resource "aws_ecr_repository" "app" {
   }
 }
 
-# Create ECS Cluster
+# make the ECS Cluster
 resource "aws_ecs_cluster" "main" {
   name = "${var.app_name}-cluster"
 
@@ -25,7 +25,7 @@ resource "aws_ecs_cluster" "main" {
   }
 }
 
-# Create IAM Role for ECS Task Execution
+# create IAM Role for ECS Task Execution
 resource "aws_iam_role" "ecs_task_execution_role" {
   name = "${var.app_name}-ecs-task-execution-role"
 
