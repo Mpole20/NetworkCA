@@ -9,7 +9,7 @@ def home():
     return '''
     <html>
         <head>
-            <title>Cloud Deployment Project</title>
+            <title>NetworkCA Project</title>
             <style>
                 body { 
                     font-family: Arial, sans-serif; 
@@ -28,7 +28,7 @@ def home():
         </head>
         <body>
             <div class="container">
-                <h1>🚀 Cloud Deployment Success!</h1>
+                <h1> Cloud Deployment </h1>
                 <p>This Python Flask app is running in Docker on AWS ECS</p>
                 <p><strong>Technology Stack:</strong></p>
                 <ul>
@@ -38,20 +38,12 @@ def home():
                     <li>AWS ECS Fargate</li>
                     <li>GitHub Actions CI/CD</li>
                 </ul>
-                <p><a href="/api/health">View Health Check</a></p>
             </div>
         </body>
     </html>
     '''
 
-@app.route('/api/health')
-def health():
-    return jsonify({
-        'status': 'healthy',
-        'timestamp': datetime.datetime.utcnow().isoformat(),
-        'service': 'Python Flask App',
-        'environment': os.getenv('ENVIRONMENT', 'production')
-    })
+
 
 if __name__ == '__main__':
     print("Starting Flask server on port 3000...")
