@@ -12,13 +12,13 @@ resource "aws_ecr_repository" "app" {
 }
 
 # make the ECS Cluster
-resource "aws_ecs_cluster" "main" {
-  name = "${var.app_name}-cluster"
+  resource "aws_ecs_cluster" "main" {
+    name = "${var.app_name}-cluster"
 
-  setting {
-    name  = "containerInsights"
-    value = "enabled"
-  }
+    setting {
+      name  = "containerInsights"
+      value = "enabled"
+    }
 
   tags = {
     Name = "${var.app_name}-cluster"
