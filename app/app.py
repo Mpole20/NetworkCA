@@ -29,7 +29,7 @@ def home():
         <body>
             <div class="container">
                 <h1> Cloud video Deployment </h1>
-                <p>This Python Flask aSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSpp is running in Docker on AWS ECS</p>
+                <p>This Python Flask app is running in Docker on AWS ECS</p>
                 <p><strong>Technology Stack:</strong></p>
                 <ul>
                     <li>Python Flask</li>
