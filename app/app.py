@@ -28,7 +28,7 @@ def home():
         </head>
         <body>
             <div class="container">
-                <h1> Cloud Video Deployment </h1>
+                <h1> Cloud Deployment </h1>
                 <p>This Python Flask app is running in Docker on AWS ECS</p>
                 <p><strong>Technology Stack:</strong></p>
                 <ul>
