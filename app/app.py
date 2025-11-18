@@ -28,11 +28,11 @@ def home():
         </head>
         <body>
             <div class="container">
-                <h1> Cloud video Deployment </h1>
+                <h1> Cloud Deployment </h1>
                 <p>This Python Flask app is running in Docker on AWS ECS</p>
                 <p><strong>Technology Stack:</strong></p>
                 <ul>
-                    <li>Python Flask</li>
+                    <li>Pythgggggggggon Flask</li>
                     <li>Docker</li>
                     <li>Terraform</li>
                     <li>AWS ECS Fargate</li>
